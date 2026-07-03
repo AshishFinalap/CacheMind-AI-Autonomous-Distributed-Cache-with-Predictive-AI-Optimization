@@ -1,0 +1,2 @@
+# CacheMind-AI-Autonomous-Distributed-Cache-with-Predictive-AI-Optimization
+Built an AI-powered distributed in-memory cache implementing consistent hashing, virtual nodes, replication, automatic failover, and dynamic key redistribution, enabling fault-tolerant and load-balanced data access across multiple worker nodes. Developed an autonomous optimization engine that learns cache access patterns, predicts future .
