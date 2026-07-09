@@ -38,6 +38,13 @@ python run.py
 
 Server starts at: `http://127.0.0.1:5000`
 
+Open the root page in a browser to use the interactive dashboard:
+
+- `http://127.0.0.1:5000/` for the UI
+- `http://127.0.0.1:5000/health` for uptime
+- `http://127.0.0.1:5000/cache/stats` for cache state
+- `http://127.0.0.1:5000/diagnostics/cluster` for cluster diagnostics
+
 ## Quick Start (Docker)
 
 ```bash
@@ -47,6 +54,7 @@ docker compose up --build
 ## Sample API Calls
 
 Set key:
+
 ```bash
 curl -X POST http://127.0.0.1:5000/cache/set \
   -H "Content-Type: application/json" \
@@ -54,16 +62,19 @@ curl -X POST http://127.0.0.1:5000/cache/set \
 ```
 
 Get key:
+
 ```bash
 curl "http://127.0.0.1:5000/cache/get?key=user:1"
 ```
 
 Cluster diagnostics:
+
 ```bash
 curl "http://127.0.0.1:5000/diagnostics/cluster"
 ```
 
 Natural language diagnostics:
+
 ```bash
 curl -X POST http://127.0.0.1:5000/diagnostics/query \
   -H "Content-Type: application/json" \
