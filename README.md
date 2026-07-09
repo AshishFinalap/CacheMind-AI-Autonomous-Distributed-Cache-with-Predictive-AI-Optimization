@@ -103,7 +103,7 @@ Request body:
 ```json
 {
   "key": "user:1",
-  "value": {"name": "ashish"}
+  "value": { "name": "ashish" }
 }
 ```
 
